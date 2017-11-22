@@ -6,3 +6,6 @@ Added data base schema
 
 # Folder structure reference 
 https://github.com/melphi/java-api-best-practices
+
+# Web development instruction
+1. Require angular cli 1.5 and above
