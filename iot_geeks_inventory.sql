@@ -18,6 +18,8 @@ create table iotgeeks_admin(
 	constraint iotgeeks_admin_email_id unique (email_id),
 	constraint iotgeeks_admin_mobile_number unique (mobile_number) 
 );
+/* missing role column */
+alter table iotgeeks_admin add role varchar(20) not null after mobile_number;
 
 /* insert sample records */
 insert into iotgeeks_admin (first_name, last_name, user_name, email_id, mobile_number, password, create_date, active) values ('murugadoss', 'balasubramaniyam', 'murugadossb', 'murugadossb@gmail.com', '9840212346', '21232f297a57a5a743894a0e4a801fc3', now(), true);
